@@ -1,11 +1,11 @@
 #pragma comment(lib, "LogitechSteeringWheelLib.lib")
 #include "LogitechSteeringWheelLib.h"
 #include <iostream>
-#include <serial\serial.h>
+#include "ArduSerial.h"
+#include "pch.h"
 
 
 using namespace std;
-using namespace serial;
 
 DIJOYSTATE2ENGINES* state;
 
@@ -14,15 +14,34 @@ float speedValue;
 float brakeValue;
 float clutchValue;
 
+string data = "hi";
+
+void setup()
+{
+	Serial9.begin(115200);
+
+	std::cout << "Starting..." << std::endl;
+
+	while (!Serial9);
+
+	while (Serial9.available())
+		Serial9.read();
+
+	std::cout << "Connected" << std::endl;
+}
 
 int main()
 {
 	// Ouverture du port série
+	setup();
 
 
 	std::cout << "Hello World!\n";
 	//the parameter determines whether you’ll use X-input or not
 	LogiSteeringInitialize(TRUE);
+
+	
+
 	while (true)
 	{
 		if (LogiUpdate())
