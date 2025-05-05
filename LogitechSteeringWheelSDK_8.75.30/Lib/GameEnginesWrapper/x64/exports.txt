@@ -1,0 +1,78 @@
+Microsoft (R) COFF/PE Dumper Version 14.42.34435.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file LogitechSteeringWheelEnginesWrapper.dll
+
+File Type: DLL
+
+  Section contains the following exports for LogitechSteeringWheelEnginesWrapper.dll
+
+    00000000 characteristics
+    561E83C3 time date stamp Wed Oct 14 18:33:07 2015
+        0.00 version
+           1 ordinal base
+          50 number of functions
+          50 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001000 LogiButtonIsPressed
+          2    1 00001020 LogiButtonReleased
+          3    2 00001040 LogiButtonTriggered
+          4    3 00001060 LogiGenerateNonLinearValues
+          5    4 00001080 LogiGetCurrentControllerProperties
+          6    5 000010A0 LogiGetDevicePath
+          7    6 000010C0 LogiGetFriendlyProductName
+          8    7 000010E0 LogiGetNonLinearValue
+          9    8 00001110 LogiGetOperatingRange
+         10    9 00001130 LogiGetOperatingRangeDInput
+         11    A 00001180 LogiGetShifterMode
+         12    B 000011A0 LogiGetState
+         13    C 000011C0 LogiGetStateENGINES
+         14    D 000011E0 LogiHasForceFeedback
+         15    E 00001200 LogiIsConnected
+         16    F 00001220 LogiIsDeviceConnected
+         17   10 00001240 LogiIsManufacturerConnected
+         18   11 00001260 LogiIsModelConnected
+         19   12 00001280 LogiIsPlaying
+         20   13 000012A0 LogiPlayBumpyRoadEffect
+         21   14 000012C0 LogiPlayCarAirborne
+         22   15 000012E0 LogiPlayConstantForce
+         23   16 00001300 LogiPlayDamperForce
+         24   17 00001320 LogiPlayDirtRoadEffect
+         25   18 00001340 LogiPlayFrontalCollisionForce
+         26   19 00001360 LogiPlayLeds
+         27   1A 00001380 LogiPlayLedsDInput
+         28   1B 000013F0 LogiPlaySideCollisionForce
+         29   1C 00001410 LogiPlaySlipperyRoadEffect
+         30   1D 00001430 LogiPlaySoftstopForce
+         31   1E 00001450 LogiPlaySpringForce
+         32   1F 00001470 LogiPlaySurfaceEffect
+         33   20 00001490 LogiSetOperatingRange
+         34   21 000014B0 LogiSetOperatingRangeDInput
+         35   22 00001500 LogiSetPreferredControllerProperties
+         36   23 00001550 LogiSteeringGetSdkVersion
+         37   24 00001620 LogiSteeringInit
+         38   25 00001B40 LogiSteeringInitialize
+         39   26 00001B80 LogiSteeringInitializeWithWindow
+         40   27 00001BE0 LogiSteeringShutdown
+         41   28 00001C00 LogiStopBumpyRoadEffect
+         42   29 00001C20 LogiStopCarAirborne
+         43   2A 00001C40 LogiStopConstantForce
+         44   2B 00001C60 LogiStopDamperForce
+         45   2C 00001C80 LogiStopDirtRoadEffect
+         46   2D 00001CA0 LogiStopSlipperyRoadEffect
+         47   2E 00001CC0 LogiStopSoftstopForce
+         48   2F 00001CE0 LogiStopSpringForce
+         49   30 00001D00 LogiStopSurfaceEffect
+         50   31 00001D20 LogiUpdate
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\etien\\Documents\\carDrivingProject\\LogitechSteeringWheelSDK_8.75.30\\Samples\\SteeringWheelSDKDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{012AB2C4-CCE5-485C-8DB1-72F23CC6E506}|SteeringWheelSDKDemo.vcxproj|C:\\Users\\etien\\Documents\\carDrivingProject\\LogitechSteeringWheelSDK_8.75.30\\Samples\\SteeringWheelSDKDemo\\SteeringWheelSDKDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{012AB2C4-CCE5-485C-8DB1-72F23CC6E506}|SteeringWheelSDKDemo.vcxproj|solutionrelative:SteeringWheelSDKDemo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012AB2C4-CCE5-485C-8DB1-72F23CC6E506}|SteeringWheelSDKDemo.vcxproj|C:\\Users\\etien\\Documents\\carDrivingProject\\LogitechSteeringWheelSDK_8.75.30\\Samples\\SteeringWheelSDKDemo\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{012AB2C4-CCE5-485C-8DB1-72F23CC6E506}|SteeringWheelSDKDemo.vcxproj|solutionrelative:stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "stdafx.cpp",
+              "DocumentMoniker": "C:\\Users\\etien\\Documents\\carDrivingProject\\LogitechSteeringWheelSDK_8.75.30\\Samples\\SteeringWheelSDKDemo\\stdafx.cpp",
+              "RelativeDocumentMoniker": "stdafx.cpp",
+              "ToolTip": "C:\\Users\\etien\\Documents\\carDrivingProject\\LogitechSteeringWheelSDK_8.75.30\\Samples\\SteeringWheelSDKDemo\\stdafx.cpp",
+              "RelativeToolTip": "stdafx.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T16:35:50.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SteeringWheelSDKDemo.cpp",
+              "DocumentMoniker": "C:\\Users\\etien\\Documents\\carDrivingProject\\LogitechSteeringWheelSDK_8.75.30\\Samples\\SteeringWheelSDKDemo\\SteeringWheelSDKDemo.cpp",
+              "RelativeDocumentMoniker": "SteeringWheelSDKDemo.cpp",
+              "ToolTip": "C:\\Users\\etien\\Documents\\carDrivingProject\\LogitechSteeringWheelSDK_8.75.30\\Samples\\SteeringWheelSDKDemo\\SteeringWheelSDKDemo.cpp",
+              "RelativeToolTip": "SteeringWheelSDKDemo.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T14:03:37.107Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
