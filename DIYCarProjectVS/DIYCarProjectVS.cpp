@@ -14,7 +14,7 @@ float speedValue;
 float brakeValue;
 float clutchValue;
 
-string data = "hi";
+string dataaa = "hi";
 
 void setup()
 {
@@ -30,17 +30,22 @@ void setup()
 	std::cout << "Connected" << std::endl;
 }
 
+void loop()
+{
+	
+}
+
 int main()
 {
-	// Ouverture du port sÃ©rie
+	// Ouverture du port série
 	setup();
 
 
 	std::cout << "Hello World!\n";
-	//the parameter determines whether youâ€™ll use X-input or not
+	//the parameter determines whether you’ll use X-input or not
 	LogiSteeringInitialize(TRUE);
 
-	
+
 
 	while (true)
 	{
@@ -49,7 +54,7 @@ int main()
 
 			if (LogiIsConnected(0))
 			{
-				LogiPlaySpringForce(0, 0, 0, 0);
+				LogiPlaySpringForce(0, 0, 25, 25);
 
 				//LogiPlayDirtRoadEffect(0, 20);
 
@@ -65,10 +70,15 @@ int main()
 					<< " | embrayage:" << state->rglSlider[0]
 					<< endl;
 
+				
+				Serial9.println(std::to_string(rotVolantDeg));
+				
+				
+
 			}
 			else
 			{
-				cout << "volant pas connectÃ©";
+				cout << "volant pas connecté";
 			}
 
 			if (GetKeyState('A') & 0x8000/*Check if high-order bit is set (1 << 15)*/)

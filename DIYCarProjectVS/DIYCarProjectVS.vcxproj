@@ -76,7 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\ArduSerial-master\ArduSerial-master;C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\serial-main\serial-main\include;C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\LogitechSteeringWheelSDK_8.75.30\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\etien\AppData\Local\Arduino15\libraries\Servo\src;C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\ArduSerial-master\ArduSerial-master;C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\serial-main\serial-main\include;C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\LogitechSteeringWheelSDK_8.75.30\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,9 +133,6 @@
     <ClCompile Include="..\ArduSerial-master\ArduSerial-master\ArduSerial.cpp" />
     <ClCompile Include="..\ArduSerial-master\ArduSerial-master\pch.cpp" />
     <ClCompile Include="DIYCarProjectVS.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Serial\impl\win.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

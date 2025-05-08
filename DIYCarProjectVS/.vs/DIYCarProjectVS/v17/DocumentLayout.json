@@ -10,8 +10,7 @@
       "AbsoluteMoniker": "D:0:0:{0DABEFF5-6C24-4659-B1BB-465EE463DB29}|DIYCarProjectVS.vcxproj|C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\ArduSerial-master\\ArduSerial-master\\ArduSerial.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0DABEFF5-6C24-4659-B1BB-465EE463DB29}|DIYCarProjectVS.vcxproj|C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\DIYCarProjectVS\\Serial\\impl\\win.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0DABEFF5-6C24-4659-B1BB-465EE463DB29}|DIYCarProjectVS.vcxproj|solutionrelative:Serial\\impl\\win.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0DABEFF5-6C24-4659-B1BB-465EE463DB29}|DIYCarProjectVS.vcxproj|C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\ArduSerial-master\\ArduSerial-master\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,28 +28,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\ArduSerial-master\\ArduSerial-master\\pch.cpp",
+              "RelativeDocumentMoniker": "..\\ArduSerial-master\\ArduSerial-master\\pch.cpp",
+              "ToolTip": "C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\ArduSerial-master\\ArduSerial-master\\pch.cpp",
+              "RelativeToolTip": "..\\ArduSerial-master\\ArduSerial-master\\pch.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-05T20:52:41.111Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ArduSerial.cpp",
               "DocumentMoniker": "C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\ArduSerial-master\\ArduSerial-master\\ArduSerial.cpp",
               "RelativeDocumentMoniker": "..\\ArduSerial-master\\ArduSerial-master\\ArduSerial.cpp",
               "ToolTip": "C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\ArduSerial-master\\ArduSerial-master\\ArduSerial.cpp",
               "RelativeToolTip": "..\\ArduSerial-master\\ArduSerial-master\\ArduSerial.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-05T19:56:27.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "win.h",
-              "DocumentMoniker": "C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\DIYCarProjectVS\\Serial\\impl\\win.h",
-              "RelativeDocumentMoniker": "Serial\\impl\\win.h",
-              "ToolTip": "C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\DIYCarProjectVS\\Serial\\impl\\win.h",
-              "RelativeToolTip": "Serial\\impl\\win.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-05T19:40:06.634Z"
+              "WhenOpened": "2025-05-05T19:56:27.525Z"
             },
             {
               "$type": "Document",
@@ -60,7 +58,7 @@
               "RelativeDocumentMoniker": "DIYCarProjectVS.cpp",
               "ToolTip": "C:\\Users\\etien\\Documents\\carDrivingProject\\DIY-RC-Car\\DIYCarProjectVS\\DIYCarProjectVS.cpp",
               "RelativeToolTip": "DIYCarProjectVS.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-05T18:29:59.597Z",
               "EditorCaption": ""
