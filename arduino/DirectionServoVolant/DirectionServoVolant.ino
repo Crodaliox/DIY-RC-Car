@@ -4,7 +4,7 @@ Servo servoGauche;
 int facteurDirection = 3;
 void setup() {
   Serial.begin(115200); //Si Baud plus faible, le servo ne marchera pas bien (il aura des sacades !!! :o :o)
-  servoGauche.attach(10);
+  servoGauche.attach(9);
 }
 
 void loop() {

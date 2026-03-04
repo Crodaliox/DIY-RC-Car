@@ -32,17 +32,17 @@ void setup()
 
 void loop()
 {
-	
+
 }
 
 int main()
 {
-	// Ouverture du port série
+	// Ouverture du port sÃ©rie
 	setup();
 
 
 	std::cout << "Hello World!\n";
-	//the parameter determines whether you’ll use X-input or not
+	//the parameter determines whether youâ€™ll use X-input or not
 	LogiSteeringInitialize(TRUE);
 
 
@@ -70,15 +70,15 @@ int main()
 					<< " | embrayage:" << state->rglSlider[0]
 					<< endl;
 
-				
+
 				Serial6.println(std::to_string(rotVolantDeg));
-				
-				
+
+
 
 			}
 			else
 			{
-				cout << "volant pas connecté";
+				cout << "volant pas connectÃ©";
 			}
 
 			if (GetKeyState('A') & 0x8000/*Check if high-order bit is set (1 << 15)*/)
