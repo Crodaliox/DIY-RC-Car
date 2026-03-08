@@ -14,6 +14,9 @@ float speedValue;
 float brakeValue;
 float clutchValue;
 
+int speedValueNormal;
+int brakeValueNormal;	
+
 string dataaa = "hi";
 
 void setup()
@@ -64,14 +67,17 @@ int main()
 				speedValue = -(float(state->lY) / 65534) + 0.5;
 				brakeValue = -(float(state->lRz) / 65534) + 0.5;
 				clutchValue = -(float(state->rglSlider[0]) / 65534) + 0.5;
+
+				speedValueNormal = speedValue * 255;
+				brakeValueNormal = brakeValue * 255;
+
 				cout << "Degree de volant : " << rotVolantDeg
-					<< " | Accelerateur: " << speedValue
-					<< " | Frein: " << brakeValue
+					<< " | Accelerateur Normalisé: " << speedValueNormal
+					<< " | Frein: " << brakeValueNormal
 					<< " | embrayage:" << state->rglSlider[0]
 					<< endl;
-
 				
-				Serial6.println(std::to_string(rotVolantDeg));
+				Serial6.println(std::to_string(rotVolantDeg) + ";" + std::to_string(speedValueNormal));
 				
 				
 

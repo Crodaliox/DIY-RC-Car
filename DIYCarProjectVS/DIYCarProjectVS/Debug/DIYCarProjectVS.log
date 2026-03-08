@@ -1,7 +1,9 @@
 ﻿  DIYCarProjectVS.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(63,47): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
-C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(64,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(65,47): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
-C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(66,57): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(66,47): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(67,46): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(68,47): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(69,57): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(71,35): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\DIYCarProjectVS.cpp(72,35): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
   DIYCarProjectVS.vcxproj -> C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\DIYCarProjectVS\Debug\DIYCarProjectVS.exe
