@@ -21,14 +21,14 @@ string dataaa = "hi";
 
 void setup()
 {
-	Serial6.begin(115200);
+	Serial10.begin(115200);
 
 	std::cout << "Starting..." << std::endl;
 
-	while (!Serial6);
+	while (!Serial10);
 
-	while (Serial6.available())
-		Serial6.read();
+	while (Serial10.available())
+		Serial10.read();
 
 	std::cout << "Connected" << std::endl;
 }
@@ -77,7 +77,7 @@ int main()
 					<< " | embrayage:" << state->rglSlider[0]
 					<< endl;
 				
-				Serial6.println(std::to_string(rotVolantDeg) + ";" + std::to_string(speedValueNormal));
+				Serial10.println(std::to_string(rotVolantDeg) + ";" + std::to_string(speedValueNormal));
 				
 				
 
