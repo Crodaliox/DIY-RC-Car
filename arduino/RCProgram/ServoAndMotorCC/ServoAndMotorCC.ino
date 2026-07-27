@@ -1,16 +1,16 @@
 #include <Servo.h>
 
 Servo servoDirection;
-
+int test = 0;
 int facteurDirection = 3;
 
 // Servo
-int servoPin = 10;
+int servoPin = 9;
 
 // CC Motor (L298n)
-int in1 = 7;
-int in2 = 8;
-int ENA = 9;
+int in1 = 8;
+int in2 = 7;
+int ENA = 11;
 
 int vitesse = 0;
 
@@ -27,10 +27,12 @@ void setup() {
   // sens de rotation moteur
   digitalWrite(in1, 1);
   digitalWrite(in2, 0);
+
+  servoDirection.write(90);
 }
 
 void loop() {
-
+  
   if (Serial.available() > 0) {
 
     // Lecture des valeurs envoyé par le programme C++ de récupération de valeur du volant
@@ -47,11 +49,12 @@ void loop() {
     int rotVolant = rotStr.toInt();
     vitesse = vitesseStr.toInt();
 
-    // Conversion pour le servo
+    // Conversion pour le servo 
     int angleServo = (rotVolant / facteurDirection) + 90;
-    angleServo = constrain(angleServo, 0, 180);
+    angleServo = constrain(angleServo, 40, 140 );
 
     servoDirection.write(angleServo);
     analogWrite(ENA, vitesse);
+    
   }
 }

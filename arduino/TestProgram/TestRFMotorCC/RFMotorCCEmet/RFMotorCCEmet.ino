@@ -31,7 +31,7 @@ void loop() {
   if (Serial.available()) {
 
     input = Serial.readStringUntil('\n');
-
+0
     int sep = input.indexOf(';');
 
     if (sep != -1) {
