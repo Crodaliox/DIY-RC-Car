@@ -1,8 +1,8 @@
 #include <SPI.h>
 #include <RF24.h>
 
-#define pinCE   7           // On associe la broche "CE" du NRF24L01 à la sortie digitale D7 de l'arduino
-#define pinCSN  8           // On associe la broche "CSN" du NRF24L01 à la sortie digitale D8 de l'arduino
+#define pinCE   3           // On associe la broche "CE" du NRF24L01 à la sortie digitale D7 de l'arduino
+#define pinCSN  4           // On associe la broche "CSN" du NRF24L01 à la sortie digitale D8 de l'arduino
 #define tunnel  "PIPE1"       // On définit un "nom de tunnel" (5 caractères), pour pouvoir communiquer d'un NRF24 à l'autre
 
 
@@ -20,13 +20,14 @@ void setup() {
   radio.openWritingPipe(adresse);     // Ouverture du tunnel en ÉCRITURE, avec le "nom" qu'on lui a donné
 
   //CONFIG
-  radio.setPALevel(RF24_PA_LOW);    //Valeur d'alimentation du module
+  radio.setPALevel(RF24_PA_HIGH);    //Valeur d'alimentation du module
   radio.setDataRate(RF24_250KBPS); //Débit d'envoie
 
   radio.stopListening();              // Arrêt de l'écoute du NRF24 (signifiant qu'on va émettre, et non recevoir, ici)
 }
 
 void loop() {
+  
 
   if (Serial.available()) {
 

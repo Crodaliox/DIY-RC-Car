@@ -8,7 +8,7 @@
 
 using namespace std;
 
-DIJOYSTATE2ENGINES* state;
+DIJOYSTATE2* state;
 
 int rotVolantDeg;
 float speedValue;
@@ -27,14 +27,14 @@ string dataaa = "hi";
 
 void setup()
 {
-	Serial6.begin(115200);
+	Serial4.begin(115200);
 
 	std::cout << "Starting..." << std::endl;
 
-	while (!Serial6);
+	while (!Serial4);
 
-	while (Serial6.available())
-		Serial6.read();
+	while (Serial4.available())
+		Serial4.read();
 
 	std::cout << "Connected" << std::endl;
 }
@@ -50,16 +50,13 @@ int main()
 	setup();
 
 
-	std::cout << "Hello World!\n";
+
+
 	//the parameter determines whether you’ll use X-input or not
 	LogiSteeringInitialize(FALSE);
+	
 
-	if (!LogiSteeringInitialize(FALSE))
-	{
-		std::cout << "Erreur d'initialisation Logitech" << std::endl;
-		std::cout << "Erreur Windows : " << GetLastError() << std::endl;
-		return -1;
-	}
+	
 
 
 
@@ -78,7 +75,7 @@ int main()
 				//LogiPlayDirtRoadEffect(0, 20);
 
 
-				state = LogiGetStateENGINES(0);
+				state = LogiGetState(0);
 
 				if (state == nullptr)
 				{
@@ -95,11 +92,11 @@ int main()
 				speedValueNormal = speedValue * 255;
 				brakeValueNormal = brakeValue * 255;
 
-				//cout << "Degree de volant : " << rotVolantDeg
-				//	<< " | Accelerateur Normalisé: " << speedValueNormal
-				//	<< " | Frein: " << brakeValueNormal
-				//	<< " | embrayage:" << state->rglSlider[0]
-				//	<< endl;
+				cout << "Degree de volant : " << rotVolantDeg
+					<< " | Accelerateur Normalisé: " << speedValueNormal
+					<< " | Frein: " << brakeValueNormal
+					<< " | embrayage:" << state->rglSlider[0]
+					<< endl;
 				
 
 
@@ -116,7 +113,7 @@ int main()
 				// Envoi toutes les 100 ms = 10 Hz
 				if (now - lastSend >= std::chrono::milliseconds(100))
 				{
-					Serial6.println(
+					Serial4.println(
 						std::to_string(rotVolantDeg) + ";" +
 						std::to_string(speedValueNormal)
 					);

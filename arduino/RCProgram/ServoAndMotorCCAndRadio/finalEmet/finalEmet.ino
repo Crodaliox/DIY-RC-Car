@@ -33,9 +33,18 @@ void setup()
 }
 
 void loop(){
-  Serial.println("5 - Dans la boucle"); 
-  if(radio.write(&message, sizeof(message))){ 
+  //Serial.println("5 - Dans la boucle"); 
+  input = Serial.readStringUntil('\n');
+    
+    int sep = input.indexOf(';');
+
+    if (sep != -1) {
+      vitesseCCStr = input.substring(sep + 1);
+      vitesseCC = vitesseCCStr.toInt();
+    }
+    
+  if(radio.write(&vitesseCC, sizeof(vitesseCC))){ 
     Serial.println("Message envoyé "); 
-    Serial.println(message); } 
-    delay(1000);
+    Serial.println(vitesseCC); } 
+    //delay(100);
 }

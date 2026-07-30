@@ -13,12 +13,27 @@
 #define pinCSN  4             // On associe la broche "CSN" du NRF24L01 à la sortie digitale D4 de l'arduino
 #define tunnel  "PIPE1"       // On définit le "nom de tunnel" (5 caractères) à travers lequel on va recevoir les données de l'émetteur
 
+//CCMotor
+int in1 = 8;
+int in2 = 7;
+int ENA = 10; // La pin ENA de la puce LN298n sert à controler la vitesse du moteur (Valeur compris entre 0 et 255)
+
 RF24 radio(pinCE, pinCSN);    // Instanciation du NRF24L01
 
 const byte adresse[6] = tunnel;       // Mise au format "byte array" du nom du tunnel
 char message[32] = "";
+int vitesseCC = 0;
 
 void setup() {
+    //Setup moteur cc
+  pinMode(in1,OUTPUT);
+  pinMode(in2,OUTPUT);
+  pinMode(ENA, OUTPUT);
+
+  digitalWrite(in1,1);
+  digitalWrite(in2,0);
+
+
   // Initialisation du port série (pour afficher les infos reçues, sur le "Moniteur Série" de l'IDE Arduino)
   Serial.begin(115200);
   Serial.println("Récepteur NRF24L01");
@@ -41,8 +56,8 @@ void setup() {
 void loop() {
   // On vérifie à chaque boucle si un message est arrivé
   if (radio.available()) {
-    radio.read(&message, sizeof(message));                        // Si un message vient d'arriver, on le charge dans la variable "message"
-    Serial.print("Message reçu : "); Serial.println(message);     // … et on l'affiche sur le port série !
-    analogWrite(ENA, VitesseCC); // On envoie la valeur au moteur CC
+    radio.read(&vitesseCC, sizeof(vitesseCC));                        // Si un message vient d'arriver, on le charge dans la variable "message"
+    Serial.print("Message reçu : "); Serial.println(vitesseCC);     // … et on l'affiche sur le port série !
+    analogWrite(ENA, vitesseCC);
   }
 }

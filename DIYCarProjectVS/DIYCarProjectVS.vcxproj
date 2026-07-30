@@ -76,12 +76,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\etien\AppData\Local\Arduino15\libraries\Servo\src;C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\ArduSerial-master\ArduSerial-master;C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\serial-main\serial-main\include;C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\LogitechSteeringWheelSDK_8.75.30\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\etien\AppData\Local\Arduino15\libraries\Servo\src;D:\github\VoitureRC\DIY-RC-Car\ArduSerial-master\ArduSerial-master;C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\serial-main\serial-main\include;D:\github\VoitureRC\DIY-RC-Car\LogitechSteeringWheelSDK_8.75.30\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\etien\Documents\carDrivingProject\DIY-RC-Car\LogitechSteeringWheelSDK_8.75.30\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\github\VoitureRC\DIY-RC-Car\LogitechSteeringWheelSDK_8.75.30\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LogitechSteeringWheelLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
