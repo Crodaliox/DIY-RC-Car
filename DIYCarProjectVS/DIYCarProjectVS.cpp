@@ -27,14 +27,14 @@ string dataaa = "hi";
 
 void setup()
 {
-	Serial4.begin(115200);
+	Serial6.begin(115200);
 
 	std::cout << "Starting..." << std::endl;
 
-	while (!Serial4);
+	while (!Serial6);
 
-	while (Serial4.available())
-		Serial4.read();
+	while (Serial6.available())
+		Serial6.read();
 
 	std::cout << "Connected" << std::endl;
 }
@@ -52,7 +52,14 @@ int main()
 
 	std::cout << "Hello World!\n";
 	//the parameter determines whether you’ll use X-input or not
-	LogiSteeringInitialize(TRUE);
+	LogiSteeringInitialize(FALSE);
+
+	if (!LogiSteeringInitialize(FALSE))
+	{
+		std::cout << "Erreur d'initialisation Logitech" << std::endl;
+		std::cout << "Erreur Windows : " << GetLastError() << std::endl;
+		return -1;
+	}
 
 
 
@@ -109,7 +116,7 @@ int main()
 				// Envoi toutes les 100 ms = 10 Hz
 				if (now - lastSend >= std::chrono::milliseconds(100))
 				{
-					Serial4.println(
+					Serial6.println(
 						std::to_string(rotVolantDeg) + ";" +
 						std::to_string(speedValueNormal)
 					);

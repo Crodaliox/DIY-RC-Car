@@ -1,8 +1,8 @@
 #include <SPI.h>
 #include <RF24.h>
 
-#define pinCE   3             // On associe la broche "CE" du NRF24L01 à la sortie digitale D3 de l'arduino
-#define pinCSN  4           // On associe la broche "CSN" du NRF24L01 à la sortie digitale D4 de l'arduino
+#define pinCE   7           // On associe la broche "CE" du NRF24L01 à la sortie digitale D7 de l'arduino
+#define pinCSN  8           // On associe la broche "CSN" du NRF24L01 à la sortie digitale D8 de l'arduino
 #define tunnel  "PIPE1"       // On définit un "nom de tunnel" (5 caractères), pour pouvoir communiquer d'un NRF24 à l'autre
 
 
@@ -31,7 +31,7 @@ void loop() {
   if (Serial.available()) {
 
     input = Serial.readStringUntil('\n');
-0
+    
     int sep = input.indexOf(';');
 
     if (sep != -1) {
